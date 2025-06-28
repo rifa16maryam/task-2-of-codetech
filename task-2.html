@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Task - Codtech</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header, footer {
+            background: #FF6B35;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #F7C59F;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+        section {
+            background: #EFEFEF;
+            padding: 20px;
+            border-radius: 8px;
+        }/* Tablet Styles */
+    @media (min-width: 600px) {
+        main {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        section {
+            flex: 1 1 45%;
+        }
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 900px) {
+        section {
+            flex: 1 1 30%;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Task</h1>
+        <p>CODTECH Internship Task 2</p>
+    </header><nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Section 1</h2>
+        <p>This section will adjust its size and position based on screen width to demonstrate responsiveness.</p>
+    </section>
+    <section>
+        <h2>Section 2</h2>
+        <p>This section will also adjust accordingly, ensuring a seamless user experience across devices.</p>
+    </section>
+    <section>
+        <h2>Section 3</h2>
+        <p>Try resizing your browser or opening this page on your phone to test its responsiveness effectively.</p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Codtech Internship
+</footer>
+
+</body>
+</html>
