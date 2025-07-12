@@ -1,2 +1,2 @@
-# task-2-of-codetech
+TASKS OF CODETCH
 responsive webpage
